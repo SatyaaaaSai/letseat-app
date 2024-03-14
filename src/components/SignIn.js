@@ -1,19 +1,22 @@
 import React from "react";
 import { useState } from "react";
-import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareFacebook ,FaGooglePlus,FaLinkedin} from "react-icons/fa6";
 const SignIn = () => {
   const [state, setState] = useState({
     email: "",
     password: "",
   });
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
 
-  //   const handleChange = (evt) => {
-  //     const value = evt.target.value;
-  //     setState({
-  //       ...state,
-  //       [evt.target.name]: value,
-  //     });
-  //   };
+    const { email, password } = state;
+
+    alert(`your are logged in with ${email}`);
+    setState({
+      email: "",
+      password: "",
+    });
+  };
 
   const handleChange = (evt) => {
     const { name, value } = evt.target;
@@ -25,17 +28,17 @@ const SignIn = () => {
 
   return (
     <div className="form-container sign-in-container">
-      <form>
+      <form onSubmit={handleSubmit}>
         <h1>Sign-In</h1>
         <div div className="social-container">
           <a href="#" className="social">
             <FaSquareFacebook />
           </a>
           <a href="#" className="social">
-            <i className="fab fa-google-plus-g" />
+            <FaGooglePlus/>
           </a>
           <a href="#" className="social">
-            <i className="fab fa-facebook-f" />
+                <FaLinkedin/>
           </a>
         </div>
         <span>or use your account</span>
@@ -54,6 +57,8 @@ const SignIn = () => {
           onChange={handleChange}
           required
         />
+        <a href="#">Forget your password</a>
+        <button>Sign In</button>
       </form>
     </div>
   );
