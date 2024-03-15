@@ -5,7 +5,7 @@ import "../css/Form.css";
 const Form = () => {
   const [type, setType] = useState("signIn");
   const handleClick = (text) => {
-    if (type != text) {
+    if (type !== text) {
       setType(text);
       return;
     }
@@ -40,6 +40,7 @@ const Form = () => {
                 Pop in your information and let's embark on a gastronomic
                 journey together!
               </p>
+              
               <button className="ghost" id="signUp" onClick={()=>handleClick("signUp")}>SignUp </button>
             </div>
           </div>

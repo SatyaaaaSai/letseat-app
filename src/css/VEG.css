@@ -1,0 +1,130 @@
+.image {
+    margin-top: 2rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+
+.img1, .img2 {
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url('https://static.toiimg.com/thumb/66747325.cms?imgsize=508882&width=800&height=800');
+}
+
+.img2 {
+    background-image: url('https://static.toiimg.com/thumb/54308405.cms?imgsize=510571&width=800&height=800');
+}
+.i1{
+    background-size: cover;
+ background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-NsIrswDhzeoNNX3oyRwi_cUGWKyB9qIaA&usqp=CAU');
+}
+.i2{
+    background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029848/PC_Creative%20refresh/3D_bau/banners_new/Chinese.png');
+    background-size: cover;
+   }
+   .i3{
+    background-size: cover;
+    background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Shakes.png');
+   }
+   .i4{
+    background-size: cover;
+    background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/cpxtrrbfa11e0azl5muz');
+   }
+h4 {
+    margin-top: 0;
+}
+
+.choose {
+    height: 18rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid purple;
+    border-radius: 0 0 0 5px;
+}
+
+.show {
+    padding: 0.5rem;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid red;
+    background-color: transparent;
+    color: red;
+}
+
+.shift {
+    width: 15rem;
+    border: 2px solid green;
+    border-bottom: none;
+    border-radius: 8px 0 0 0;
+}
+
+.btn-shift {
+    width: 7.5rem;
+    padding: 0.7rem;
+    border: none;
+    background-color: transparent;
+}
+
+.selected, .selectedN {
+    background-color: green;
+    color: white;
+}
+
+.selectedN {
+    background-color: red;
+}
+
+.show:hover {
+    background-color: green;
+    color: white;
+    border-color: white;
+}
+.sec{
+    display: flex;
+    flex-direction: row;
+    margin: 0 28%;
+}
+.content{
+    height: 20.35rem;
+    width: 20rem;
+    border: 2px solid green;
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+    display: grid;
+    grid-template-rows: repeat(4,25%);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.matter{
+    border: 2px solid purple;
+    margin: 5px ;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.simage{
+    border: 2px solid purple;
+    border-radius: 0 5px 5px 0;
+}
+.matter:hover{
+    background-color: green;
+    color: white;
+}
+.high{
+    font-weight: bold;
+    font-size: large;
+    border-color: red;
+    background-color: green;
+    color: white;
+}
+.align{
+    margin: auto 5px;
+}

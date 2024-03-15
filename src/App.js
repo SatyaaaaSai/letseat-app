@@ -1,12 +1,10 @@
 import Body from "./components/Body";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Form from "./components/Form";
-import Header from "./components/Header";
-
 import About from "./components/About";
 import BodyContainer from "./components/BodyContainer";
-import Kitchens from "./components/Kitchens";
 import Menu from "./components/Menu";
+import KitchensPage from "./components/KitchensPage";
 const AppRouter = createBrowserRouter([
   {
     path: "/",
@@ -30,9 +28,8 @@ const AppRouter = createBrowserRouter([
       },
       {
         path:"/kitchen",
-        element:<Kitchens/>
-      }
-      ,
+        element:<KitchensPage/>
+      },
       {
         path:"/menu",
         element:<Menu/>

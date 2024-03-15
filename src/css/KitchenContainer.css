@@ -1,0 +1,28 @@
+
+.kitchen-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.kitchen-component{
+    width: 17rem;
+    height: 23rem;
+    background-color: #e6e6e6;
+    margin-left: 42px;
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.kitchen-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.kitchen-image {
+    width: 200px;
+    height: 200px;
+}
+.kitchen-details-container{
+    padding-left: 12px;
+}
